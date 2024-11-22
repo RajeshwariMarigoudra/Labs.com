@@ -1,0 +1,49 @@
+.top {
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .text {
+    color: #fff;
+  }
+  
+  .register-link span {
+    color: #fff;
+    margin: 0 5px;
+  }
+  
+  .py-1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .bg-black {
+    background-color: #000;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .text-lg-right {
+    text-align: right;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  

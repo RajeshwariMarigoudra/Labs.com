@@ -1,0 +1,45 @@
+.menu-wrap {
+    margin-bottom: 2rem;
+  }
+  
+  .heading-menu h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .menus {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  
+  .menu-img {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7f50;
+  }
+  
+  .text p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

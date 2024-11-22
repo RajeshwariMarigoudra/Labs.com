@@ -1,0 +1,49 @@
+.ftco-section {
+    padding: 60px 0;
+  }
+  
+  .ftco-wrap-about {
+    background: #fff;
+    text-align: center;
+  }
+  
+  .heading-section .subheading {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff7f50;
+  }
+  
+  .heading-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .wrap-about p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .video {
+    margin-top: 20px;
+  }
+  
+  .icon-video {
+    width: 60px;
+    height: 60px;
+    background: #ff7f50;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-video:hover {
+    background: #ff5722;
+  }
+  

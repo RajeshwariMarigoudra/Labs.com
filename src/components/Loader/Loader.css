@@ -1,0 +1,52 @@
+/* Loader Styles */
+#ftco-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #ftco-loader.show {
+    visibility: visible;
+  }
+  
+  #ftco-loader .circular {
+    animation: rotate 2s linear infinite;
+  }
+  
+  #ftco-loader .path-bg {
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+  #ftco-loader .path {
+    stroke-dasharray: 137;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 137;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -137;
+    }
+  }
+  

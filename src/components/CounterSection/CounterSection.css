@@ -1,0 +1,41 @@
+.ftco-section {
+    padding: 60px 0;
+  }
+  
+  .ftco-counter {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .counter-wrap {
+    margin-bottom: 20px;
+  }
+  
+  .block-18 {
+    text-align: center;
+  }
+  
+  .block-18 .text {
+    color: white;
+  }
+  
+  .block-18 .number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff7f50;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .block-18 span {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  

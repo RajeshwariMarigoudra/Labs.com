@@ -1,0 +1,67 @@
+.home-slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .js-fullheight {
+    height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .slider-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+  }
+  
+  .slider-text h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary {
+    background: #ff7f50;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #ff5722;
+  }
+  
+  .btn-white {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-white:hover {
+    background: white;
+    color: black;
+  }
+  
