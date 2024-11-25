@@ -1,0 +1,170 @@
+/* General Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the section takes the full height of the viewport */
+  }
+  
+
+/* Container for the section */
+.ftco-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Form Section Styling */
+.makereservation {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading-section {
+  margin-bottom: 30px;
+}
+
+.heading-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.heading-section .subheading {
+  font-size: 18px;
+  color: #ff6f61;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-control:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none;
+}
+
+.select-wrap .icon {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  pointer-events: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #e05a4f;
+}
+
+input[type="submit"]:active {
+  background-color: #d04d44;
+}
+
+@media screen and (max-width: 767px) {
+  .makereservation {
+    padding: 20px;
+  }
+
+  .heading-section h2 {
+    font-size: 24px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+/* Map Section */
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 991px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .makereservation {
+    margin-bottom: 30px;
+  }
+}

@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link to="/contact" className="nav-link">Contact</Link>
             </li>
             {/* Call to Action Button */}
-            <li className="nav-item cta">
+            <li className="nav-item ">
               <Link to="/reservation" className="nav-link">Book a Tour</Link>
             </li>
           </ul>

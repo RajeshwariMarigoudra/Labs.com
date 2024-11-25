@@ -9,13 +9,15 @@ import InstagramGallery from "../../components/InstagramGallery/InstagramGallery
 import Loader from "../../components/Loader/Loader";
 import Menu from "../../components/Menu/Menu";
 import Reservation from "../../components/Reservation/Reservation";
+import BookingTour from "../../components/BookTourForm/BookingTour";
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Hiie</h1>
+      {/* <h1>Hiie</h1> */}
       <Slider />
       <AboutSection />
+      <BookingTour/>
       <CounterSection />
       <ChefSection />
       <Reservation />

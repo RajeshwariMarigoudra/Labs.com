@@ -13,6 +13,7 @@ import TestimonialSlider from "./components/TestimonialSlider/TestimonialSlider.
 import InstagramGallery from "./components/InstagramGallery/InstagramGallery.jsx";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader.jsx";
+import BookingTour from "./components/BookTourForm/BookingTour.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/booktourform" element={<BookingTour />} />
         <Route path="/CounterSection" element={<CounterSection />} />
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Services" element={<Services />} />
