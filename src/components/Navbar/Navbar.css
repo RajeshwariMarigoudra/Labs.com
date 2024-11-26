@@ -1,40 +1,30 @@
-/* Example CSS for Navbar styling */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;  /* Ensure navbar stays on top */
+    background-color: #343a40; /* Your navbar background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }/* Optional: Add shadow when sticky */
+
+
+/* Optional: Add smooth transition for shadow */
 .navbar {
-    background-color: #343a40 !important;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .navbar-nav .nav-link {
-    color: white;
-    margin-right: 20px;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ff7f50;
-  }
-  
-  .navbar-toggler {
-    background-color: #ff7f50;
-  }
-  
-  .navbar-toggler .oi-menu {
-    color: white;
-  }
-  
-  /* CTA Button Styling */
-  .nav-item.cta .nav-link {
-    background-color: #ff7f50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-  }
-  
-  .nav-item.cta .nav-link:hover {
-    background-color: #ff4d4d;
-  }
-  
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff7f50;
+}
+
+.navbar-toggler {
+  background-color: #ff7f50;
+}
+
+.navbar-toggler .oi-menu {
+  color: white;
+}
