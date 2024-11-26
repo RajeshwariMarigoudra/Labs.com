@@ -2,8 +2,8 @@
     position: sticky;
     top: 0;
     z-index: 9999;  /* Ensure navbar stays on top */
-    background-color: #343a40; /* Your navbar background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background-color: #030303; /* Your navbar background color */
+    box-shadow: 0 4px 6px rgb(255, 255, 255); /* Optional shadow */
   }/* Optional: Add shadow when sticky */
 
 

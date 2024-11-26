@@ -1,67 +1,72 @@
 .home-slider {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Full screen height */
+  background-image: url('https://dxminds.com/wp-content/uploads/2022/09/home.png'); /* Background image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  padding: 0 20px; /* Add some padding to the left side */
+}
+
+.home-slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Darken the background */
+  z-index: 1; /* Overlay layer */
+}
+
+.home-slider .slider-text {
+  position: relative;
+  z-index: 2; /* Text layer above the overlay */
+  color: white;
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Limit width of the text */
+}
+
+.home-slider .slider-text h1 {
+  font-size: 2rem; /* Medium-sized text */
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle text shadow for readability */
+  line-height: 1.4;
+}
+
+.home-slider .slider-text p {
+  font-size: 1.125rem; /* Medium text size for paragraph */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow for contrast */
+}
+
+.home-slider .elementor-button-wrapper a {
+  background-color: #ff7f50; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+}
+
+.home-slider .elementor-button-wrapper a:hover {
+  background-color: #ff5722; /* Hover button color */
+  transform: translateY(-5px); /* Slightly lift the button on hover */
+}
+
+@media (max-width: 768px) {
+  .home-slider .slider-text h1 {
+    font-size: 1.5rem; /* Slightly smaller heading on mobile */
   }
-  
-  .slider-item {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+
+  .home-slider .slider-text p {
+    font-size: 1rem; /* Adjust text size for mobile */
   }
-  
-  .js-fullheight {
-    height: 100vh;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .slider-text {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-  }
-  
-  .slider-text h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    margin: 10px;
-    text-transform: uppercase;
-  }
-  
-  .btn-primary {
-    background: #ff7f50;
-    border: none;
-    color: white;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background: #ff5722;
-  }
-  
-  .btn-white {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-white:hover {
-    background: white;
-    color: black;
-  }
-  
+}
