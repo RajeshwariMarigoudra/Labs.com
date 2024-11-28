@@ -14,13 +14,13 @@ const HomePage = () => {
     <div>
       {/* <h1>Hiie</h1> */}
       <Slider />
+      <AboutLabs/>
       <CoworkingSection />
       <AboutSection />
       <BookingTour/>
-      <CounterSection />
-      <ServicePage />
-      <AboutLabs/>
+      <CounterSection />         
       <LocationSlider />
+      <ServicePage />  
       <Loader />
       
     </div>
