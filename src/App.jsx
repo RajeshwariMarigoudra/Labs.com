@@ -14,6 +14,7 @@ import BookingTour from "./components/BookTourForm/BookingTour.jsx";
 import LocationSlider from "./components/LocationSlider/LocationSlider.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CoworkingSection from "./components/CoworkingSection/CoworkingSection.jsx";
+import RoomingSection from "./components/Rooming/RoomingSection.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/CounterSection" element={<CounterSection />} />
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/services/roaming" element={<RoomingSection />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/CoworkingSection" element={<CoworkingSection />} />
         <Route path="/LocationSlider" element={<LocationSlider />} />

@@ -28,3 +28,18 @@
 .navbar-toggler .oi-menu {
   color: white;
 }
+.navbar .dropdown-menu {
+  background-color: #343a40; /* Dark background for the dropdown */
+}
+
+.navbar .dropdown-item {
+  color: white;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #5a6268; /* Hover color */
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
