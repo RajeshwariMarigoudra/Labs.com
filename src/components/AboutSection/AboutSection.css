@@ -46,4 +46,7 @@
   .icon-video:hover {
     background: #ff5722;
   }
-  
+  .ftco-section .img-fluid {
+    border-radius: 100% 0% 100% 0% / 26% 79% 21% 74%;
+    object-fit: cover;  /* Optional: this ensures that the image covers the container's area */
+}

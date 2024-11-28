@@ -27,9 +27,9 @@ const CounterSection = () => {
 
   return (
     <section
-      className="ftco-section ftco-counter img"
+      className="ftco-section ftco-counter img mt-3"
       id="section-counter"
-      style={{ backgroundImage: `url(src/assets/images/bg_4.jpg)` }}
+      // style={{ backgroundImage: `url(src/assets/images/bg_4.jpg)` }}
     >
       <div className="container">
         <div className="row d-md-flex align-items-center justify-content-center">

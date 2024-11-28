@@ -1,155 +1,61 @@
-import React from "react";
-import "../Footer/Footer.css"; // Import your custom CSS file
+import React from 'react';
+import './Footer.css'; // Import custom CSS for footer styling
 
 const Footer = () => {
   return (
-    <footer className="ftco-footer ftco-bg-dark ftco-section">
-      <div className="container-fluid px-md-5 px-3">
-        <div className="row mb-5">
-          {/* Appetizer Section */}
-          <div className="col-md-6 col-lg-3">
-            <div className="ftco-footer-widget mb-4">
-              <h2 className="ftco-heading-2">Appetizer</h2>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-              <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li className="ftco-animate">
-                  <a href="#">
-                    <span className="icon-twitter"></span>
-                  </a>
-                </li>
-                <li className="ftco-animate">
-                  <a href="#">
-                    <span className="icon-facebook"></span>
-                  </a>
-                </li>
-                <li className="ftco-animate">
-                  <a href="#">
-                    <span className="icon-instagram"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <footer id="footer">
+      <div className="left-side">
+        <a href="https://www.facebook.com/LABSWorkWorldwide/" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/LABS_Worldwide" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/labs_worldwide/?hl=en" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/labsworldwide" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-linkedin"></i>
+        </a>
+      </div>
 
-          {/* Open Hours Section */}
-          <div className="col-md-6 col-lg-3">
-            <div className="ftco-footer-widget mb-4">
-              <h2 className="ftco-heading-2">Open Hours</h2>
-              <ul className="list-unstyled open-hours">
-                <li className="d-flex">
-                  <span>Monday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Tuesday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Wednesday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Thursday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Friday</span>
-                  <span>9:00 - 02:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Saturday</span>
-                  <span>9:00 - 02:00</span>
-                </li>
-                <li className="d-flex">
-                  <span>Sunday</span>
-                  <span>9:00 - 02:00</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div className="right-side">
+        <p className="slova-donja-footer">LABS Office Locations London:</p>
+        <br />
+        <table>
+          <tbody>
+            <tr>
+              <th>Camden:</th>
+              <td><a href="/location/dockray-place/" target="_blank" rel="noopener noreferrer">LABS Dockray Place</a></td>
+              <td><a href="/location/labs-lockside/" target="_blank" rel="noopener noreferrer">LABS Lockside</a></td>
+              <td><a href="/location/labs-hawley-wharf/" target="_blank" rel="noopener noreferrer">LABS Hawley Wharf</a></td>
+              <td><a href="/location/triangle-london/" target="_blank" rel="noopener noreferrer">LABS Triangle</a></td>
+              <td><a href="/location/atrium-london/" target="_blank" rel="noopener noreferrer">LABS Atrium</a></td>
+            </tr>
+            <tr>
+              <th>Holborn:</th>
+              <td><a href="/location/southampton-place-london/" target="_blank" rel="noopener noreferrer">LABS Southampton Place</a></td>
+              <td><a href="/location/hogarth-london/" target="_blank" rel="noopener noreferrer">LABS Hogarth House</a></td>
+              <td><a href="/location/labs-90-high-holborn/" target="_blank" rel="noopener noreferrer">LABS 90 High Holborn</a></td>
+              <td><a href="/location/labs-house/" target="_blank" rel="noopener noreferrer">LABS House</a></td>
+            </tr>
+            <tr>
+              <th>International:</th>
+              <td><a href="https://labstower.cy/" target="_blank" rel="noopener noreferrer">Nicosia, Cyprus</a></td>
+            </tr>
+            <tr>
+              <th>Services:</th>
+              <td><a href="/services/coworking/" target="_blank" rel="noopener noreferrer">Roaming</a></td>
+              <td><a href="/services/private/" target="_blank" rel="noopener noreferrer">Private</a></td>
+              <td><a href="/services/enterprise/" target="_blank" rel="noopener noreferrer">Enterprise</a></td>
+              <td><a href="/services/meeting-rooms/" target="_blank" rel="noopener noreferrer">Meeting Rooms</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-          {/* Newsletter Section */}
-          <div className="col-md-6 col-lg-3">
-            <div className="ftco-footer-widget mb-4">
-              <h2 className="ftco-heading-2">Newsletter</h2>
-              <p>
-                Far far away, behind the word mountains, far from the countries.
-              </p>
-              <form action="#" className="subscribe-form">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control mb-2 text-center"
-                    placeholder="Enter email address"
-                  />
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    className="form-control submit px-3"
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
-
-          {/* Instagram Section */}
-          <div className="col-md-6 col-lg-3">
-            <div className="ftco-footer-widget mb-4">
-              <h2 className="ftco-heading-2">Instagram</h2>
-              <div className="thumb d-sm-flex">
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-1.jpg)" }}
-                ></a>
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-2.jpg)" }}
-                ></a>
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-3.jpg)" }}
-                ></a>
-              </div>
-              <div className="thumb d-flex">
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-4.jpg)" }}
-                ></a>
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-5.jpg)" }}
-                ></a>
-                <a
-                  href="#"
-                  className="thumb-menu img"
-                  style={{ backgroundImage: "url(images/insta-6.jpg)" }}
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Copyright Section */}
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <p>
-              Copyright &copy; {new Date().getFullYear()} All rights reserved |
-              This template is made with{" "}
-              <i className="icon-heart" aria-hidden="true"></i> by{" "}
-              <a href="https://colorlib.com" target="_blank" rel="noreferrer">
-                Colorlib
-              </a>
-            </p>
-          </div>
-        </div>
+      <div className="clear">
+        <br />Copyright 2024 © LABS | All Rights Reserved<br />
       </div>
     </footer>
   );

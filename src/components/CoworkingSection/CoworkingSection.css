@@ -1,0 +1,70 @@
+.ftco-section {
+  padding: 50px 0;
+}
+
+.workspace {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.workspace .img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.workspace .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.workspace h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.workspace .location {
+  font-size: 14px;
+  color: gray;
+}
+
+.workspace .faded ul {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workspace .faded ul li {
+  margin: 0 5px;
+}
+
+.workspace .faded ul li a {
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.workspace .faded ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .workspace .img {
+    height: 180px;
+  }
+
+  .workspace h3 {
+    font-size: 18px;
+  }
+
+  .workspace .location {
+    font-size: 12px;
+  }
+}

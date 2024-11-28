@@ -1,45 +1,45 @@
 import React from "react";
-import "../ChefSection/ChefSection.css"; // Import CSS for styling
+import "../CoworkingSection/CoworkingSection.css"; // Import CSS for styling
 
-// Import Chef Images
-import chef1 from "../../assets/images/chef-1.jpg";
-import chef2 from "../../assets/images/chef-2.jpg";
-import chef3 from "../../assets/images/chef-3.jpg";
-import chef4 from "../../assets/images/chef-4.jpg";
+// Import coworking images (use appropriate images related to coworking spaces)
+import coworking1 from "../../assets/images/coworking-1.jpg";
+import coworking2 from "../../assets/images/coworking-2.jpg";
+import coworking3 from "../../assets/images/coworking-3.jpg";
+import coworking4 from "../../assets/images/coworking-4.jpg";
 
-const ChefSection = () => {
-  const chefs = [
+const CoworkingSection = () => {
+  const coworkingSpaces = [
     {
       id: 1,
-      name: "John Smooth",
-      position: "Restaurant Owner",
-      image: chef4,
+      name: "Creative Space",
+      location: "London, UK",
+      image: coworking1,
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "A flexible workspace with creative energy. Perfect for startups, freelancers, and innovators.",
     },
     {
       id: 2,
-      name: "Rebeca Welson",
-      position: "Head Chef",
-      image: chef2,
+      name: "Tech Hub",
+      location: "New York, USA",
+      image: coworking2,
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "A modern coworking space for tech companies, offering high-speed internet and collaborative areas.",
     },
     {
       id: 3,
-      name: "Kharl Branyt",
-      position: "Chef",
-      image: chef3,
+      name: "Business Center",
+      location: "Berlin, Germany",
+      image: coworking3,
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "Premium coworking spaces with private offices and meeting rooms in a central business district.",
     },
     {
       id: 4,
-      name: "Luke Simon",
-      position: "Chef",
-      image: chef1,
+      name: "Collaborative Workspace",
+      location: "San Francisco, USA",
+      image: coworking4,
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "An open and collaborative environment with flexible membership options and community events.",
     },
   ];
 
@@ -48,27 +48,24 @@ const ChefSection = () => {
       <div className="container">
         <div className="row justify-content-center mb-5 pb-2">
           <div className="col-md-7 text-center heading-section ftco-animate">
-            <span className="subheading">Chef</span>
-            <h2 className="mb-4">Our Master Chef</h2>
+            <span className="subheading">Coworking Spaces</span>
+            <h2 className="mb-4">Our Coworking Spaces</h2>
           </div>
         </div>
         <div className="row">
-          {chefs.map((chef) => (
-            <div
-              key={chef.id}
-              className="col-md-6 col-lg-3 ftco-animate"
-            >
-              <div className="staff">
+          {coworkingSpaces.map((space) => (
+            <div key={space.id} className="col-md-6 col-lg-3 ftco-animate">
+              <div className="workspace">
                 <div
                   className="img"
                   style={{
-                    backgroundImage: `url(${chef.image})`,
+                    backgroundImage: `url(${space.image})`,
                   }}
                 ></div>
                 <div className="text pt-4">
-                  <h3>{chef.name}</h3>
-                  <span className="position mb-2">{chef.position}</span>
-                  <p>{chef.description}</p>
+                  <h3>{space.name}</h3>
+                  <span className="location mb-2">{space.location}</span>
+                  <p>{space.description}</p>
                   <div className="faded">
                     <ul className="ftco-social d-flex">
                       <li className="ftco-animate">
@@ -103,4 +100,4 @@ const ChefSection = () => {
   );
 };
 
-export default ChefSection;
+export default CoworkingSection;

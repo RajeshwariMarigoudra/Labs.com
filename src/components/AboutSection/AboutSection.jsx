@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className="ftco-section ftco-wrap-about ftco-no-pb">
      <div className="row justify-content-center align-items-center">
-  <div className="col-md-6">
+  <div className="col-md-6 order-md-2">
     <h2 className="mb-4">LABS DAILY</h2>
     <p>
       LABS DAILY
@@ -18,7 +18,7 @@ const AboutSection = () => {
     </p>
   </div>
 
-  <div className="col-md-6">
+  <div className="col-md-6 order-md-1">
     <img
       src="https://www.mynewlab.com/wp-content/uploads/2018/04/iStock-490525207.jpg"
       alt="Stock Image"
@@ -27,7 +27,7 @@ const AboutSection = () => {
   </div>
   <div className="row justify-content-center align-items-center">
   {/* Image on the left */}
-  <div className="col-md-6 order-md-1">
+  <div className="col-md-6 ">
     <img
       src="https://www.mynewlab.com/wp-content/uploads/2018/04/iStock-490525207.jpg"
       alt="Stock Image"
@@ -36,7 +36,7 @@ const AboutSection = () => {
   </div>
   
   {/* Content on the right */}
-  <div className="col-md-6 order-md-2">
+  <div className="col-md-6 ">
     <h2 className="mb-4">JOIN LABS</h2>
     <p>
     JOIN LABS

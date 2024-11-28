@@ -5,15 +5,15 @@ import Topbar from "./components/TopBar/Topbar.jsx";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/AboutPage.jsx"; // Correct Import
 import CounterSection from "./components/CounterSection/CounterSection.jsx";
-import Services from "./components/Services/Services.jsx";
+import Services from "./components/Services/ServicePage.jsx";
 import Menu from "./components/Menu/Menu.jsx";
 import Reservation from "./components/Reservation/Reservation.jsx";
-import ChefSection from "./components/ChefSection/ChefSection.jsx";
-import TestimonialSlider from "./components/TestimonialSlider/TestimonialSlider.jsx";
-import InstagramGallery from "./components/InstagramGallery/InstagramGallery.jsx";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader.jsx";
 import BookingTour from "./components/BookTourForm/BookingTour.jsx";
+import LocationSlider from "./components/LocationSlider/LocationSlider.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CoworkingSection from "./components/CoworkingSection/CoworkingSection.jsx";
 
 function App() {
   return (
@@ -28,9 +28,8 @@ function App() {
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/reservation" element={<Reservation />} />
-        <Route path="/ChefSection" element={<ChefSection />} />
-        <Route path="/TestimonialSlider" element={<TestimonialSlider />} />
-        <Route path="/InstagramGallery" element={<InstagramGallery />} />
+        <Route path="/CoworkingSection" element={<CoworkingSection />} />
+        <Route path="/LocationSlider" element={<LocationSlider />} />
       </Routes>
       <Footer />
       <Loader />
