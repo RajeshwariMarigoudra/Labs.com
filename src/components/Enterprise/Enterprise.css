@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .top-pad {
+    padding-top: 50px;
+  }
+  
+  .location-cover {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .location-cover-gallery {
+    position: relative;
+  }
+  
+  .image.bg {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .inner-wrapper {
+    position: relative;
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  .center-wrapper {
+    text-align: center;
+  }
+  
+  .center h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .mobile__container {
+    display: none;
+  }
+  
+  .txt__address {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .txt__getTouch a {
+    color: #1d72b8;
+    text-decoration: none;
+  }
+  
+  .learn-more {
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .service-section {
+    padding: 50px 20px;
+  }
+  
+  .service-section .the-text h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-section ul li {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  
+  .related-services .item {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+  }
+  
+  .related-services .image.bg {
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .center h4 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  

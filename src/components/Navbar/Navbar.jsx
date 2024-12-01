@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Your custom CSS file
 
-const Navbar = () => {
+const Navbar = ({ handleShowModal }) => {
   const [isOpen, setIsOpen] = useState(false); // State to control the toggle
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to control the dropdown
 
@@ -52,11 +52,23 @@ const Navbar = () => {
               <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} aria-labelledby="navbarDropdown">
                 <Link className="dropdown-item" to="/services">Services Overview</Link>
                 <Link className="dropdown-item" to="/services/roaming">Roaming</Link> {/* Roaming link */}
+                <Link className="dropdown-item" to="/services/privateoffice">Privateoffice</Link> 
+                <Link className="dropdown-item" to="/services/enterprise">Enterprise</Link> 
+                <Link className="dropdown-item" to="/services/labmanaged">Labmanaged</Link> 
+                <Link className="dropdown-item" to="/services/meetingrooms">meetingrooms</Link> 
               </div>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/portfolio">portfolio</Link>
+            </li>
+            <li className="nav-item">
+            <button
+                className="nav-link"
+                style={{ backgroundColor: "transparent", border: "none" }}
+                onClick={handleShowModal}
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </div>

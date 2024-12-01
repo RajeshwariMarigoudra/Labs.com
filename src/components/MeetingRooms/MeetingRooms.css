@@ -1,0 +1,117 @@
+/* Styles for the Meeting Rooms page */
+
+/* Location cover */
+.location-cover {
+    position: relative;
+    background-color: #000;
+    height: 500px;
+  }
+  
+  .location-cover .image.bg {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  
+  .location-cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .center-wrapper h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .learn-more {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .learn-more i {
+    margin-right: 10px;
+  }
+  
+  .leads-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .form-locations-outer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .htdesk-enrollnow {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .htdesk-regbutton {
+    background-color: #00aaff;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .htdesk-regbutton:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Custom select box */
+  .selectric-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .selectric select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .selectric-items {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .selectric-items li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .selectric-items li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .location-cover {
+      height: 300px;
+    }
+  
+    .center-wrapper h1 {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+/* Basic styling for the page */
+.container {
+    padding-top: 50px;
+  }
+  
+  .location-cover {
+    position: relative;
+  }
+  
+  .image.bg {
+    position: relative;
+    height: 100%;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .center {
+    padding: 20px;
+  }
+  
+  h1, h2, h4 {
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  button.btnBookTour {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.btnBookTour:hover {
+    background-color: #333;
+  }
+  
+  ul.of-three {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul.of-three li {
+    margin-bottom: 10px;
+  }
+  
+  .learn-more {
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .related-services .item {
+    display: inline-block;
+    width: 31%;
+    margin-right: 2%;
+    position: relative;
+  }
+  
+  .related-services .image.bg {
+    background-size: cover;
+    height: 200px;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .center-wrapper .center h4 {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .center-wrapper .center .button {
+    background-color: #f7b500;
+    padding: 10px 15px;
+    color: #fff;
+  }
+  
+  .center-wrapper .center .button:hover {
+    background-color: #f59200;
+  }
+  

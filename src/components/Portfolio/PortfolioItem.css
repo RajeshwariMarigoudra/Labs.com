@@ -1,0 +1,114 @@
+/* Portfolio Container */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    margin: 20px 70px 90px 70px; /* Top: 20px, Right: 70px, Bottom: 90px, Left: 70px */
+    padding: 10px 0; /* No horizontal padding, just vertical padding */
+}
+
+/* Portfolio Item Styles */
+.portfolio-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Item Thumbnail */
+.item-thumbnail {
+    position: relative;
+    overflow: hidden; /* Hide parts of image that overflow */
+}
+
+/* Portfolio Image Styling */
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease; /* Make the image fade out */
+}
+
+/* Transparent Glass-like Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent overlay for frosted effect */
+    backdrop-filter: blur(2px); /* Frosted glass effect */
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease; /* Apply transition for fade and movement */
+}
+
+/* Text Container */
+.portfolio-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 1s ease; /* Smooth transition for the text appearance */
+}
+
+/* Title Animation (Top to center) */
+.portfolio-link .portfolio-title {
+    position: relative;
+    top: -40px; /* Position above center initially */
+    opacity: 0;
+    transition: opacity 1s ease, top 1s ease; /* Smooth transition for the title movement */
+}
+
+/* Category Animation (Bottom to center) */
+.portfolio-link .portfolio-category {
+    position: relative;
+    top: 40px; /* Position below center initially */
+    opacity: 0;
+    color: #ddd;
+    transition: opacity 1s ease, top 1s ease; /* Smooth transition for the category movement */
+}
+
+/* Show the overlay and text when hovering */
+.item-thumbnail:hover .overlay {
+    opacity: 1; /* Make the overlay visible */
+    transform: translateY(0); /* Reset any transform to center */
+}
+
+.item-thumbnail:hover .portfolio-link {
+    opacity: 1; /* Make the text visible */
+}
+
+/* Top to center text animation on hover */
+.item-thumbnail:hover .portfolio-link .portfolio-title {
+    top: 0; /* Move the title to the center */
+    opacity: 1; /* Make the title visible */
+}
+
+/* Bottom to center text animation on hover */
+.item-thumbnail:hover .portfolio-link .portfolio-category {
+    top: 0; /* Move the category to the center */
+    opacity: 1; /* Make the category visible */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%; /* Full-width on small screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio-item {
+        width: 100%; /* Adjust for large screens */
+    }
+}

@@ -1,0 +1,151 @@
+.container {
+    padding-top: 60px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .lighter {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .lm-cover {
+    position: relative;
+    background: #ccc;
+    height: 80vh;
+  }
+  
+  .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .lm-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .lm-button:hover {
+    background-color: #004999;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lm-h3, .lm-h4, .lm-h5 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .lm-p {
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .lm-point {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lm-point h5 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .lm-point p {
+    margin-left: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .location__item a.active {
+    color: #0066cc;
+  }
+  
+  .location__item a {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .location__item p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  /* Existing Styles ... */
+
+/* Our Clients Section */
+.lm-section__clients {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .our-clients h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .client-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .client-logo li {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .client-logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  /* Add custom styles if necessary for the new section */
+.work__icons--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .lm-info__details--left img {
+    width: 100%;
+  }
+  
+  .lm-info__details--right {
+    padding-left: 20px;
+  }
+  
+  .info-icon-p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .info-check-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  

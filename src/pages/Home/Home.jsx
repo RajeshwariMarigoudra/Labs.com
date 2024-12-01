@@ -8,6 +8,7 @@ import AboutLabs from "../About/AboutLab";
 import LocationSlider from "../../components/LocationSlider/LocationSlider";
 import ServicePage from "../../components/Services/ServicePage";
 import CoworkingSection from "../../components/CoworkingSection/CoworkingSection";
+import PortfolioItem from "../../components/Portfolio/PortfolioItem";
 
 const HomePage = () => {
   return (
@@ -22,7 +23,6 @@ const HomePage = () => {
       <LocationSlider />
       <ServicePage />  
       <Loader />
-      
     </div>
   );
 };
