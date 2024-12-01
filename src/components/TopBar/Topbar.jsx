@@ -2,27 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../TopBar/Topbar.css"; // Add your own styling or use inline styles if needed
 
 const Topbar = () => {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true); // Add sticky class when scrolled
-      } else {
-        setIsSticky(false); // Remove sticky class when at the top
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+ 
 
   return (
-    <div className={`py-2 bg-dark text-white topbar ${isSticky ? "sticky" : ""}`}>
+    <div className="py-2 bg-dark text-white topbar">
       <div className="container">
         <div className="row no-gutters d-flex align-items-center">
           <div className="col-12 d-flex justify-content-between">

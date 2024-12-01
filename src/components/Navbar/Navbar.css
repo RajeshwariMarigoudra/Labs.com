@@ -1,45 +1,145 @@
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 9999;  /* Ensure navbar stays on top */
-    background-color: #030303; /* Your navbar background color */
-    box-shadow: 0 4px 6px rgb(255, 255, 255); /* Optional shadow */
-  }/* Optional: Add shadow when sticky */
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Topbar Styles */
+.topbar {
+  background-color: #000;
+  color: white;
+  font-size: 0.875rem; /* Smaller font size */
+  padding: 5px 0; /* Reduce padding to make it more compact */
+}
 
-/* Optional: Add smooth transition for shadow */
+.topbar .container {
+  padding: 0; /* Remove padding from container */
+}
+
+.topbar .icon {
+  font-size: 18px; /* Slightly smaller icon size */
+  color: #fff;
+}
+
+.topbar .text {
+  color: #fff;
+}
+
+.topbar .register-link span {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.topbar .d-flex {
+  display: flex;
+}
+
+.topbar .align-items-center {
+  align-items: center;
+}
+
+.topbar .text-right {
+  text-align: right;
+}
+
+.topbar .mb-0 {
+  margin-bottom: 0;
+}
+
+/* Navbar Styles */
 .navbar {
-  transition: box-shadow 0.3s ease-in-out;
+  padding: 0.25rem 1rem; /* Reduced padding to make it compact */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+  transition: all 0.3s ease;
+  min-height: 50px; /* Ensure the navbar height is compact */
 }
 
-.navbar-nav .nav-link {
-  color: white;
-  margin-right: 20px;
+.navbar .navbar-brand {
+  font-size: 1.1rem; /* Adjust font size to keep it compact */
+  font-weight: bold;
+  color: #ff7f50; /* Attractive color for brand name */
+  letter-spacing: 1px;
+  padding: 0; /* Remove any unnecessary padding */
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ff7f50;
-}
-
-.navbar-toggler {
-  background-color: #ff7f50;
-}
-
-.navbar-toggler .oi-menu {
-  color: white;
-}
-.navbar .dropdown-menu {
-  background-color: #343a40; /* Dark background for the dropdown */
-}
-
-.navbar .dropdown-item {
-  color: white;
-}
-
-.navbar .dropdown-item:hover {
-  background-color: #5a6268; /* Hover color */
+.navbar .navbar-toggler {
+  background-color: #ff7f50; /* Attractive color for toggle button */
 }
 
 .navbar-toggler-icon {
   background-color: white;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px; /* Slightly smaller font size */
+  color: white;
+  margin-right: 15px; /* Reduced margin for compactness */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff7f50; /* Hover color */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff7f50; /* Active state color */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for dropdown */
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-item {
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+  background-color: #ff7f50;
+}
+
+.contact-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  color: #ff7f50;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Make Navbar Sticky */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+}
+
+/* Ensure the navbar is responsive */
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.1rem; /* Adjust font size for mobile */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 12px; /* Smaller font size for mobile */
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    padding-left: 10px;
+  }
+  
+  .navbar-toggler {
+    background-color: #ff7f50; /* Attractive color for mobile toggle */
+  }
 }

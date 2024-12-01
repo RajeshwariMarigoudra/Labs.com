@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Topbar from "./components/TopBar/Topbar.jsx";
+// import Topbar from "./components/TopBar/Topbar.jsx";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/AboutPage.jsx"; // Correct Import
 import CounterSection from "./components/CounterSection/CounterSection.jsx";
@@ -21,6 +21,8 @@ import Enterprise from "./components/Enterprise/Enterprises.jsx";
 import LabManaged from "./components/LabManaged/LabManaged.jsx";
 import MeetingRooms from "./components/MeetingRooms/MeetingRooms.jsx";
 import ContactPopup from "./components/ContactPopup/ContactPopup.jsx";
+import AffordableWorkspace from "./components/AffordableWorkspace/AffordableWorkspace.jsx";
+import BlogPosts from "./components/BlogPosts/BlogPosts.jsx";
 
 function App() {
 
@@ -38,7 +40,7 @@ function App() {
 
   return (
     <Router>
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar handleShowModal={handleShowModal} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -52,10 +54,12 @@ function App() {
         <Route path="/services/enterprise" element={<Enterprise />} />
         <Route path="/services/labmanaged" element={<LabManaged />} />
         <Route path="/services/meetingrooms" element={<MeetingRooms />} />
+        <Route path="/services/affordableWorkspace" element={<AffordableWorkspace />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/CoworkingSection" element={<CoworkingSection />} />
         <Route path="/LocationSlider" element={<LocationSlider />} />
         <Route path="/portfolio" element={<PortfolioItem />} />
+        <Route path="/blogPosts" element={<BlogPosts />} />
          {/* Contact Modal */}
       </Routes>
       <Footer />

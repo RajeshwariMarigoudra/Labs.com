@@ -1,0 +1,81 @@
+/* Add your custom styles for the component here */
+.top-pad {
+    padding-top: 50px;
+  }
+  
+  .location-cover {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .location-cover-gallery .image.bg {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .learn-more {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .service-section {
+    padding: 50px 0;
+  }
+  
+  .the-text h2 {
+    font-size: 36px;
+  }
+  
+  .of-three {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .of-three li {
+    margin: 10px 0;
+  }
+  
+  .related-services .item {
+    position: relative;
+  }
+  
+  .related-services .item .image.bg {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+  
+  .related-services .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .related-services .item .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  

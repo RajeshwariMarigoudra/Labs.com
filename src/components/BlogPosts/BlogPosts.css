@@ -1,0 +1,46 @@
+/* You can add custom styling here or use Bootstrap classes */
+.posts {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .image.bg {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .details {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .details h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  

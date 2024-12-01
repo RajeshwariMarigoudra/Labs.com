@@ -1,52 +1,43 @@
-/* Make the topbar sticky */
-.top {
+/* Topbar Styles */
+.topbar {
   background-color: #000;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem; /* Smaller font size */
+  padding: 5px 0; /* Reduce padding to make it more compact */
 }
 
-.icon {
-  font-size: 20px;
+.topbar .container {
+  padding: 0; /* Remove padding from container */
+}
+
+.topbar .icon {
+  font-size: 18px; /* Slightly smaller icon size */
   color: #fff;
 }
 
-.text {
+.topbar .text {
   color: #fff;
 }
 
-.register-link span {
+.topbar .register-link span {
   color: #fff;
   margin: 0 5px;
 }
 
-.py-1 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.bg-black {
-  background-color: #000;
-}
-
-.d-flex {
+.topbar .d-flex {
   display: flex;
 }
 
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-center {
+.topbar .align-items-center {
   align-items: center;
 }
 
-.text-lg-right {
+.topbar .text-right {
   text-align: right;
 }
 
-.mb-0 {
+.topbar .mb-0 {
   margin-bottom: 0;
 }
 
-  
 
