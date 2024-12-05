@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Button } from 'react-bootstrap'; // Importing Button from Bootstrap
-import '../Services/ServicePage.CSS'; // Import the CSS file
+import '../Services/ServicePage.css'; 
 
 const ServicePage = () => {
   return (
