@@ -1,68 +1,17 @@
+/* General Styles */
 .location-slider {
   background-color: #f7f7f7;
+  padding: 60px 0; /* Add some spacing around the slider */
 }
 
 .location-slider .swiper-container {
   position: relative;
 }
 
-.location-slider .swiper-slide {
-  position: relative;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.location-slider .item {
-  position: relative;
-  height: 400px; /* Set desired height for the slider */
-}
-
-.location-slider .image.bg {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.location-slider .diagonal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.location-slider .center-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Heading Section */
+.location-slider .heading-section {
   text-align: center;
-  color: #fff;
-}
-
-.location-slider .center h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.location-slider .button.bright {
-  padding: 10px 20px;
-  background-color: #ff6600;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.location-slider .button.bright:hover {
-  background-color: #e55c00;
+  margin-bottom: 60px;
 }
 
 .location-slider .subheading {
@@ -73,13 +22,152 @@
 .location-slider .heading-section h2 {
   font-size: 32px;
   font-weight: bold;
+  color: #333;
 }
 
+/* Styles for Swiper Slide */
+.location-slider .swiper-slide {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Container for each slide item */
+.location-slider .item {
+  position: relative;
+  height: 300px;  /* Set a fixed height for the item */
+  width: 100%;    /* Set width to 100% of the container */
+  overflow: hidden; /* Hide any overflowed content */
+}
+
+/* Image Styling */
+.location-slider .slider-image {
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Set image to fill the entire container */
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: center; /* Center the image */
+}
+
+
+/* Overlay content */
+.location-slider .overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.location-slider .item:hover .overlay-content {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Centered content */
+.location-slider .center-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.location-slider .center h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.location-slider .center h3 strong {
+  font-size: 32px;
+}
+
+/* Button Styling */
+.location-slider .button.bright {
+  padding: 12px 24px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px;
+}
+
+.location-slider .button.bright:hover {
+  background-color: #e55c00;
+  transform: scale(1.05); /* Slight enlarge effect on hover */
+}
+
+/* Pagination & Navigation buttons */
 .location-slider .swiper-pagination-bullet {
   background-color: #ff6600;
+  opacity: 0.8;
 }
 
-.location-slider .swiper-button-next, 
+.location-slider .swiper-pagination-bullet-active {
+  background-color: #e55c00; /* Darker orange when active */
+}
+
+.location-slider .swiper-button-next,
 .location-slider .swiper-button-prev {
   color: #ff6600;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.location-slider .swiper-button-next:after,
+.location-slider .swiper-button-prev:after {
+  font-size: 30px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .location-slider .item {
+    height: 300px;
+  }
+
+  .location-slider .center h3 {
+    font-size: 24px;
+  }
+
+  .location-slider .button.bright {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .location-slider .swiper-button-next:after,
+  .location-slider .swiper-button-prev:after {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-slider .item {
+    height: 250px;
+  }
+
+  .location-slider .center h3 {
+    font-size: 20px;
+  }
+
+  .location-slider .button.bright {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .location-slider .swiper-button-next:after,
+  .location-slider .swiper-button-prev:after {
+    font-size: 20px;
+  }
 }

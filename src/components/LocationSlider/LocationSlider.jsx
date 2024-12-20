@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../LocationSlider/LocationSlider.css"; // Import custom styles
 import "swiper/css"; // Import Swiper core styles
 import "swiper/css/pagination";
@@ -6,21 +6,25 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
 import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Import Swiper modules
 
+// Import local images
+import Image1 from "../../assets/images/roaming-image1.jpg";
+import Image2 from "../../assets/images/roaming-image2.jpg";
+
 const LocationSlider = () => {
   const locations = [
     {
       id: 1,
-      image: "https://s3.eu-west-2.amazonaws.com/wp-media.labs.com/wp-content/uploads/2017/05/15090309/Labs_Holborn-House_01_v6-1024x640.webp",
+      image: Image1, // Local image imported
       name: "LABS House",
       location: "London",
-      link: "https://labs.com/location/labs-house/"
+      link: "https://labs.com/location/labs-house/",
     },
     {
       id: 2,
-      image: "https://s3.eu-west-2.amazonaws.com/wp-media.labs.com/wp-content/uploads/2022/11/08133134/LABS_Southampton-Place_Meeting-room_Study_3-1024x684.webp",
+      image: Image2, // Local image imported
       name: "LABS Southampton Place",
       location: "London",
-      link: "https://labs.com/location/southampton-place-london/"
+      link: "https://labs.com/location/southampton-place-london/",
     },
     // Add more location objects as needed
   ];
@@ -47,19 +51,21 @@ const LocationSlider = () => {
             <SwiperSlide key={location.id}>
               <a href={location.link} className="location-slide">
                 <div className="item">
-                  <div
-                    className="image bg"
-                    style={{ background: `url(${location.image}) no-repeat center center / cover` }}
-                  ></div>
-                  <div className="diagonal"></div>
-                  <div className="center-wrapper">
-                    <div className="center">
-                      <h3>
-                        {location.location} <br />
-                        <strong>{location.name}</strong>
-                      </h3>
-                      <div className="button bright mt-3">
-                        Find Out More
+                  {/* Image tag instead of background-image */}
+                  <img
+                    src={location.image} // Dynamically set image source
+                    alt={location.name}
+                    className="slider-image" // Add class for styling
+                  />
+                  {/* Overlay content */}
+                  <div className="overlay-content">
+                    <div className="center-wrapper">
+                      <div className="center">
+                        <h3>
+                          {location.location} <br />
+                          <strong>{location.name}</strong>
+                        </h3>
+                        <div className="button bright mt-3">Find Out More</div>
                       </div>
                     </div>
                   </div>

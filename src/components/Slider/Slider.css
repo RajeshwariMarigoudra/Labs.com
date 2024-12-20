@@ -1,72 +1,141 @@
-.home-slider {
+/* Style for each slide */
+.swiper-slide {
   position: relative;
-  width: 100%;
-  height: 60vh; /* Full screen height */
-  background-image: url('https://dxminds.com/wp-content/uploads/2022/09/home.png'); /* Background image */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-start; /* Align content to the left */
-  align-items: center; /* Vertically center the content */
-  padding: 0 20px; /* Add some padding to the left side */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end;  /* Align content to the bottom */
+  width: 100%;  /* Ensure the slide takes full width */
+  height: 100%; /* Ensure the slide takes full height */
+  overflow: hidden;  /* Hide any overflowing part of the image */
 }
 
-.home-slider .overlay {
+/* Image styling */
+.swiper-slide img {
+  width: 100%; /* Ensure the image stretches across the full slide width */
+  height: 100%; /* Ensure the image fills the full height of the slide */
+  /* object-fit: cover; Crop and scale the image to maintain aspect ratio */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth zoom and filter transition */
+}
+
+/* Zoom effect on hover */
+.swiper-slide:hover img {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  filter: brightness(0.8); /* Darken the image on hover */
+}
+
+/* Optional: Add a gradient overlay for better text readability */
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Darken the background */
-  z-index: 1; /* Overlay layer */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.home-slider .slider-text {
-  position: relative;
-  z-index: 2; /* Text layer above the overlay */
+/* Show the overlay on hover */
+.swiper-slide:hover .overlay {
+  opacity: 1;
+}
+
+/* Text and button container */
+.slider-text {
+  position: absolute;
+  bottom: 40px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the content horizontally */
+  z-index: 2;
+  text-align: center;
   color: white;
-  text-align: left; /* Align text to the left */
-  max-width: 600px; /* Limit width of the text */
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-.home-slider .slider-text h1 {
-  font-size: 2rem; /* Medium-sized text */
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle text shadow for readability */
-  line-height: 1.4;
+.swiper-slide:hover .slider-text {
+  opacity: 1; /* Fade in text when the slide is hovered */
 }
 
-.home-slider .slider-text p {
-  font-size: 1.125rem; /* Medium text size for paragraph */
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow for contrast */
+/* Heading styling */
+.slider-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px; /* Space between title and paragraph */
 }
 
-.home-slider .elementor-button-wrapper a {
-  background-color: #ff7f50; /* Button color */
+/* Paragraph styling */
+.slider-text p {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+/* Button styling */
+.book-tour-btn {
+  padding: 12px 24px;
+  background-color: #ff6347;
   color: white;
-  padding: 10px 20px;
-  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
 }
 
-.home-slider .elementor-button-wrapper a:hover {
-  background-color: #ff5722; /* Hover button color */
-  transform: translateY(-5px); /* Slightly lift the button on hover */
+.book-tour-btn:hover {
+  background-color: #e55347;
+  transform: scale(1.05); /* Slight enlarge effect on hover */
 }
 
+/* Navigation and Pagination styling */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 3;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6347;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .home-slider .slider-text h1 {
-    font-size: 1.5rem; /* Slightly smaller heading on mobile */
+  .slider-text h2 {
+    font-size: 28px;
   }
 
-  .home-slider .slider-text p {
-    font-size: 1rem; /* Adjust text size for mobile */
+  .slider-text p {
+    font-size: 16px;
+  }
+
+  .book-tour-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide img {
+    object-fit: cover;
+  }
+
+  .slider-text {
+    bottom: 20px;
+  }
+
+  .book-tour-btn {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }

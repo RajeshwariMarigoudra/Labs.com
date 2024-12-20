@@ -13,60 +13,38 @@ const RoomingSection = () => {
     <Container className="top-pad" id="container" data-page="service" data-id="4969">
       {/* Location Cover */}
       <div className="location-cover full-height show">
-        <div
-          className="location-cover-gallery slick-initialized slick-slider"
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundPosition: "top center",
-            backgroundSize: "cover", // Ensure the background covers the entire element
-          }}
-        >
-          <div className="overlay"></div>
-        </div>
-        <div className="inner-wrapper open-gallery">
-          <div className="center-wrapper of-soon show">
-            <div className="center">
-              <h1>
-                Roaming <br />
-                <strong></strong>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Leads Form */}
-      <div className="leads-form narrow fadeInUp coworking-con" data-wow-delay=".8s" id="leads-form-b">
-        <div className="form-locations-outer">
-          <div className="form-the-title text-center">
-            <div className="enroll-sec">
-              <div className="enroll-title">
-                <h1 className="htdesk-enrollnow">ENROLL NOW!</h1>
-                <p>
-                  Want to become a LABS member? Please select which building you’d like to be based at and
-                  fill in the form.
-                </p>
-              </div>
-              <img
-                src="https://labs.com/wp-content/themes/labs/images/arrow_symbol_hotdesk.svg"
-                alt="Arrow Down SVG"
-                className="svg-htdesk"
-              />
-              <div>
-                <h6 className="lbl-htbuidling">Choose your home building?</h6>
-                <Form.Select id="which-building" name="which_building">
-                  <option value="0">LABS House</option>
-                  <option value="1">LABS Hogarth House</option>
-                  <option value="2">LABS Atrium</option>
-                  <option value="3">LABS Hawley Lock</option>
-                  <option value="4">LABS 90 High Holborn</option>
-                  <option value="5">LABS Southampton Place</option>
-                </Form.Select>
-                <Button variant="primary" className="htdesk-regbutton" id="btn-hdcontinue">
-                  CONTINUE YOUR REGISTRATION
-                </Button>
-              </div>
-            </div>
+        {/* Roaming Title on the Left */}
+        <div className="roaming-title">
+          <h1>Roaming</h1>
+        </div>
+
+        {/* ENROLL NOW! Card on the Right */}
+        <div className="enroll-card">
+          <div className="enroll-title">
+            <h1 className="htdesk-enrollnow">ENROLL NOW!</h1>
+            <p>
+              Want to become a LABS member? Please select which building you’d like to be based at and fill in the form.
+            </p>
+          </div>
+          <img
+            src="https://labs.com/wp-content/themes/labs/images/arrow_symbol_hotdesk.svg"
+            alt="Arrow Down SVG"
+            className="svg-htdesk"
+          />
+          <div>
+            <h6 className="lbl-htbuidling">Choose your home building?</h6>
+            <Form.Select id="which-building" name="which_building">
+              <option value="0">LABS House</option>
+              <option value="1">LABS Hogarth House</option>
+              <option value="2">LABS Atrium</option>
+              <option value="3">LABS Hawley Lock</option>
+              <option value="4">LABS 90 High Holborn</option>
+              <option value="5">LABS Southampton Place</option>
+            </Form.Select>
+            <Button variant="primary" className="htdesk-regbutton" id="btn-hdcontinue">
+              CONTINUE YOUR REGISTRATION
+            </Button>
           </div>
         </div>
       </div>
@@ -112,87 +90,93 @@ const RoomingSection = () => {
 
       {/* Child Services (Roaming Membership Options) */}
       <div className="child-services" id="child-services">
-        <Row>
-          <Col md={4}>
-            <a href="https://labs.com/services/coworking/hot-desking-holborn/">
-              <div className="item">
-                <div
-                  className="image bg"
-                  style={{
-                    background: `url(${roamingImage1})`,
-                    backgroundSize: "cover", // Ensure image covers the div area
-                    backgroundPosition: "center", // Center the image in the div
-                  }}
-                ></div>
-                <div className="overlay"></div>
-                <div className="center-wrapper">
-                  <div className="center">
-                    <h4>
-                      Roaming Membership <br />
-                      <strong>in Holborn</strong>
-                    </h4>
-                    <Button variant="link" className="bright small m-t-10">
-                      Learn more
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Col>
-          <Col md={4}>
-            <a href="https://labs.com/services/coworking/hot-desking-camden/">
-              <div className="item">
-                <div
-                  className="image bg"
-                  style={{
-                    background: `url(${roamingImage2})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-                <div className="overlay"></div>
-                <div className="center-wrapper">
-                  <div className="center">
-                    <h4>
-                      Roaming <br />
-                      <strong>in Camden</strong>
-                    </h4>
-                    <Button variant="link" className="bright small m-t-10">
-                      Learn more
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Col>
-          <Col md={4}>
-            <a href="https://labs.com/services/coworking/hot-desking-london/">
-              <div className="item">
-                <div
-                  className="image bg"
-                  style={{
-                    background: `url(${roamingImage3})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-                <div className="overlay"></div>
-                <div className="center-wrapper">
-                  <div className="center">
-                    <h4>
-                      Roaming <br />
-                      <strong>in London</strong>
-                    </h4>
-                    <Button variant="link" className="bright small m-t-10">
-                      Learn more
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Col>
-        </Row>
-      </div>
+  <Row>
+    <Col md={4}>
+      <a href="https://labs.com/services/coworking/hot-desking-holborn/">
+        <div className="item">
+          <div
+            className="image bg"
+            style={{
+              backgroundImage: `url(${roamingImage1})`,
+              backgroundSize: "cover", // Ensures the image covers the div
+              backgroundPosition: "center", // Centers the image in the div
+              height: "250px", // Fixed height for image area
+              borderRadius: "8px", // Optional: adds rounded corners to image
+            }}
+          ></div>
+          <div className="overlay"></div>
+          <div className="center-wrapper">
+            <div className="center">
+              <h4>
+                Roaming Membership <br />
+                <strong>in Holborn</strong>
+              </h4>
+              <Button variant="link" className="bright small m-t-10">
+                Learn more
+              </Button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </Col>
+    <Col md={4}>
+      <a href="https://labs.com/services/coworking/hot-desking-camden/">
+        <div className="item">
+          <div
+            className="image bg"
+            style={{
+              backgroundImage: `url(${roamingImage2})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "250px", // Same fixed height for consistency
+              borderRadius: "8px", // Optional: rounded corners for image
+            }}
+          ></div>
+          <div className="overlay"></div>
+          <div className="center-wrapper">
+            <div className="center">
+              <h4>
+                Roaming <br />
+                <strong>in Camden</strong>
+              </h4>
+              <Button variant="link" className="bright small m-t-10">
+                Learn more
+              </Button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </Col>
+    <Col md={4}>
+      <a href="https://labs.com/services/coworking/hot-desking-london/">
+        <div className="item">
+          <div
+            className="image bg"
+            style={{
+              backgroundImage: `url(${roamingImage3})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "250px", // Same fixed height for consistency
+              borderRadius: "8px", // Optional: rounded corners for image
+            }}
+          ></div>
+          <div className="overlay"></div>
+          <div className="center-wrapper">
+            <div className="center">
+              <h4>
+                Roaming <br />
+                <strong>in London</strong>
+              </h4>
+              <Button variant="link" className="bright small m-t-10">
+                Learn more
+              </Button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </Col>
+  </Row>
+</div>
 
       {/* Service Section 2 - Facilities & Benefits */}
       <div className="service-section wide and-narrow" id="service-section-2" style={{ background: "#f5f5f5" }}>
