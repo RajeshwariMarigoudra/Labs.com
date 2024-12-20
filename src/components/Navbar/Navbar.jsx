@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import "./Navbar.css"; // Your custom CSS file
 
 const Navbar = ({ handleShowModal }) => {
@@ -75,9 +75,9 @@ const Navbar = ({ handleShowModal }) => {
       {/* Navbar (Sticky) */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div className="container">
-          <Link className="navbar-brand" to="/">My Website</Link>
-          <Link className="navbar-brand" to="/services/affordableWorkspace">Affordable</Link>
-          <Link className="navbar-brand" to="/blogPosts">BlogList</Link>
+          <NavLink className="navbar-brand" to="/">My Website</NavLink>
+          <NavLink className="navbar-brand" to="/services/affordableWorkspace">Affordable</NavLink>
+          <NavLink className="navbar-brand" to="/blogPosts">BlogList</NavLink>
 
           {/* Toggle Button for Mobile View */}
           <button
@@ -92,15 +92,15 @@ const Navbar = ({ handleShowModal }) => {
           {/* Collapsible Navbar */}
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">Home</Link>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact to="/" activeClassName="active">Home</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <NavLink className="nav-link" to="/about" activeClassName="active">About</NavLink>
               </li>
 
               {/* Services Dropdown */}
-              <li className="nav-item dropdown" ref={dropdownRef}>
+              <li className="nav-item dropdown" ref={dropdownRef} >
                 <button
                   className="nav-link dropdown-toggle"
                   onClick={toggleDropdown}
@@ -110,16 +110,16 @@ const Navbar = ({ handleShowModal }) => {
                   Services
                 </button>
                 <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/services">Services Overview</Link>
-                  <Link className="dropdown-item" to="/services/roaming">Roaming</Link>
-                  <Link className="dropdown-item" to="/services/privateoffice">Privateoffice</Link>
-                  <Link className="dropdown-item" to="/services/enterprise">Enterprise</Link>
-                  <Link className="dropdown-item" to="/services/labmanaged">Labmanaged</Link>
-                  <Link className="dropdown-item" to="/services/meetingrooms">Meeting Rooms</Link>
+                  <NavLink className="dropdown-item" to="/services" activeClassName="active">Services Overview</NavLink>
+                  <NavLink className="dropdown-item" to="/services/roaming" activeClassName="active">Roaming</NavLink>
+                  <NavLink className="dropdown-item" to="/services/privateoffice" activeClassName="active">Private Office</NavLink>
+                  <NavLink className="dropdown-item" to="/services/enterprise" activeClassName="active">Enterprise</NavLink>
+                  <NavLink className="dropdown-item" to="/services/labmanaged" activeClassName="active">Lab Managed</NavLink>
+                  <NavLink className="dropdown-item" to="/services/meetingrooms" activeClassName="active">Meeting Rooms</NavLink>
                 </div>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">Portfolio</Link>
+                <NavLink className="nav-link" to="/portfolio" activeClassName="active">Portfolio</NavLink>
               </li>
               <li className="nav-item">
                 <button

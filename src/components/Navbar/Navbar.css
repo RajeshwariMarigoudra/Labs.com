@@ -67,6 +67,19 @@
   background-color: #ff7f50; /* Attractive color for toggle button */
 }
 
+/* Dropdown active state */
+.navbar-nav .nav-item.dropdown .dropdown-item.active {
+  background-color: #ff7f50 !important; /* Active background for dropdown items */
+  color: white !important; /* Active text color */
+}
+
+/* Active State for NavLink */
+.navbar-nav .nav-link.active {
+  color: #ff7f50 !important; /* Ensures active link has the correct color */
+  font-weight: bold; /* Make it stand out */
+  text-decoration: underline; /* Optional: Add underline to active link */
+}
+
 .navbar-toggler-icon {
   background-color: white;
 }
