@@ -23,6 +23,7 @@ import MeetingRooms from "./components/MeetingRooms/MeetingRooms.jsx";
 import ContactPopup from "./components/ContactPopup/ContactPopup.jsx";
 import AffordableWorkspace from "./components/AffordableWorkspace/AffordableWorkspace.jsx";
 import BlogPosts from "./components/BlogPosts/BlogPosts.jsx";
+import AuthPopup from "./components/AuthPopup/AuthPopup.jsx";
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
       <Navbar handleShowModal={handleShowModal} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/autopopup" element={<AuthPopup />} />
         <Route path="/about" element={<About />} />
         <Route path="/booktourform" element={<BookingTour />} />
         <Route path="/CounterSection" element={<CounterSection />} />
